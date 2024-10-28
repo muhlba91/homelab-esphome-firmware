@@ -2,6 +2,7 @@
 
 [![Build status](https://img.shields.io/github/actions/workflow/status/muhlba91/homelab-esphome-firmware/build.yml?style=for-the-badge)](https://github.com/muhlba91/homelab-esphome-firmware/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/muhlba91/homelab-esphome-firmware?style=for-the-badge)](LICENSE.md)
+[![](https://api.scorecard.dev/projects/github.com/muhlba91/homelab-esphome-firmware/badge?style=for-the-badge)](https://scorecard.dev/viewer/?uri=github.com/muhlba91/homelab-esphome-firmware)
 
 This repository contains the firmware configuration and build for [ESPHome](http://esphome.io) devices.
 
