@@ -2,7 +2,7 @@
 substitutions:
   # Device information
   # Requirements for the device name: https://esphome.io/components/esphome.html
-  deviceid: shelly-plug-vie-office-desk-daniel # marked as: SP2
+  deviceid: shelly-plug-vie-office-daniel # marked as: SP2
   devicename: "Office: Plug Desk Daniel"
   channel_1: Relay
 
