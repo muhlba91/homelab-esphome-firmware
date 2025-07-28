@@ -2,8 +2,8 @@
 substitutions:
   # Device information
   # Requirements for the device name: https://esphome.io/components/esphome.html
-  deviceid: shelly-plug-tech-hub # marked as: SP1
-  devicename: "Tech Hub: Plug"
+  deviceid: shelly-plug-vie-office-desk-daniel # marked as: SP2
+  devicename: "Office: Plug Desk Daniel"
   channel_1: Relay
 
   # Password and Encryption Key for Home Assistant API, OTA Updates, and Web UI

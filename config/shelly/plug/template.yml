@@ -2,7 +2,7 @@
 substitutions:
   # Device information
   # Requirements for the device name: https://esphome.io/components/esphome.html
-  deviceid: shelly-plug-s # marked as: SPX
+  deviceid: shelly-plug-site-s # marked as: SPX
   devicename: "XXX: Plug"
   channel_1: Relay
 
