@@ -1,1 +1,1 @@
-FROM ghcr.io/esphome/esphome:2025.9.0@sha256:06f793886590c9051aa6bec7023aa52de48bc2dd577c74d08de583a1715f4eb3
+FROM ghcr.io/esphome/esphome:2025.9.1@sha256:67f4df2206af244e79c6c624ea7ef27be572f83af981657b1ac1ffa0d7b8487a
