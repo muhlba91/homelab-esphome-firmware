@@ -60,7 +60,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: mdgreenwald/mozilla-sops-action@fe9db4c6a9f56efabf8855966e98c7ec9d09eb3e # v2.0.0
+      - uses: mdgreenwald/mozilla-sops-action@bb2d96a13ef438ad122e5827a57ebd75d6ff118d # v2.1.0
 
       - uses: hashicorp/vault-action@892a26828f195e65540a40b4768ae4571f51ebfc # v4.0.0
         id: import-secrets
