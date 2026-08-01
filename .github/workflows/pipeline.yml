@@ -93,4 +93,4 @@ jobs:
           run: |
             cd /workspace
             ./scripts/build_firmware.sh
-        continue-on-error: true
+        continue-on-error: true # allow failures because there are no firmware files to built
