@@ -8,6 +8,19 @@
     "enabledManagers": [
         "github-actions",
         "pre-commit",
-        "dockerfile"
+        "dockerfile",
+        "mise"
+    ],
+    "packageRules": [
+        {
+            "matchManagers": ["mise"],
+            "matchDepNames": ["pipx:s3cmd", "uv"],
+            "enabled": false
+        },
+        {
+            "matchManagers": ["mise"],
+            "matchDepNames": ["python"],
+            "allowedVersions": "<3.15.0"
+        }
     ]
 }
