@@ -28,3 +28,7 @@ Secrets are stored in a file `secrets.yaml` in the corresponding directory, and 
 
 - [GitHub Actions](https://docs.github.com/en/actions) are verifying all configurations.
 - [Renovate Bot](https://github.com/renovatebot/renovate) is updating the GitHub Actions.
+
+## Development
+
+Tool versions (Python, uv, s3cmd, sops, shellcheck) are managed with [mise](https://mise.jdx.dev): run `mise trust` and `mise install` once, then use the scripts in `scripts/` as usual.
