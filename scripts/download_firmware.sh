@@ -4,4 +4,4 @@ S3_ASSETS_BUCKET="${1}"
 
 rm -rf firmware/*
 
-s3cmd --access_key=${GCS_ACCESS_KEY_ID} --secret_key="${GCS_SECRET_ACCESS_KEY}" --host="https://storage.googleapis.com" --host-bucket="https://storage.googleapis.com" --recursive --force get s3://${S3_ASSETS_BUCKET}/ firmware/
+s3cmd --access_key="${SCW_ACCESS_KEY}" --secret_key="${SCW_SECRET_KEY}" --host="https://s3.${SCW_DEFAULT_REGION}.scw.cloud" --host-bucket="https://s3.${SCW_DEFAULT_REGION}.scw.cloud" --recursive --force get s3://"${S3_ASSETS_BUCKET}"/ firmware/
