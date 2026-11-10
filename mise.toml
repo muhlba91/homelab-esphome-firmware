@@ -10,3 +10,5 @@ uv = "0.13.5"
 "pipx:s3cmd" = { version = "2.4.0", python = "3.14" }
 sops = "3.13.3"
 shellcheck = "0.11.0"
+fnox = { version = "1.47.0", workflow = "release.yml" }
+vault = "2.2.1"

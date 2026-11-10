@@ -32,3 +32,14 @@ Secrets are stored in a file `secrets.yaml` in the corresponding directory, and 
 ## Development
 
 Tool versions (Python, uv, s3cmd, sops, shellcheck) are managed with [mise](https://mise.jdx.dev): run `mise trust` and `mise install` once, then use the scripts in `scripts/` as usual.
+
+## Cloud Credentials
+
+The Google Cloud and Scaleway values come from Vault through [fnox](https://fnox.jdx.dev) (`fnox.toml`, installed by mise), in CI and locally:
+
+- **CI:** `hashicorp/vault-action` only logs in (GitHub OIDC, `exportToken`); fnox reads the values listed in `fnox.toml`.
+- **Locally:** set `VAULT_ADDR`, log in with the Vault CLI, and set `FNOX_PROFILE=dev`. The `dev` profile builds Google
+  Cloud credentials that impersonate the CI service account, from the machine's own key (`GCP_SOURCE_CREDENTIALS` in
+  the global fnox config, `~/.config/fnox/config.toml`).
+
+Run commands with `fnox exec -- ...`, e.g. `fnox exec -- ./scripts/upload_firmware.sh <bucket path>`. `fnox.local.toml` (ignored by git) can override values for experiments.
