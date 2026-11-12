@@ -11,4 +11,4 @@ uv = "0.13.5"
 sops = "3.13.3"
 shellcheck = "0.11.0"
 fnox = { version = "v1.48.0", workflow = "release.yml" }
-vault = "2.2.1"
+vault = "2.2.2"
