@@ -14,7 +14,6 @@ repos:
       - id: check-merge-conflict
       - id: check-symlinks
       - id: check-toml
-      - id: check-xml
       - id: detect-aws-credentials
         args: [
             "--allow-missing-credentials"
@@ -36,3 +35,19 @@ repos:
     rev: 3.0.0
     hooks:
       - id: shellcheck
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+        args: ["-c", ".yamllint.yml"]
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.12
+    hooks:
+      - id: actionlint
+  - repo: local
+    hooks:
+      - id: markdownlint-cli2
+        name: markdownlint-cli2
+        entry: mise exec -- markdownlint-cli2
+        language: system
+        files: ^(README\.md|config/shelly/FLASHING_GUIDE\.md)$
